@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- TOP SECTION -->
+    <section class="top-grid">
+
+        <!-- HERO + CONTACT -->
+        <div class="left-column">
+
+            <div class="glass hero">
+                <img src="images/profile-placeholder.jpg" class="profile-image">
+
+                <h1><strong>John Doe</strong></h1>
+
+                <p>
+                    Software engineer, builder and lifelong learner.
+                    Passionate about creating projects and sharing ideas.
+                </p>
+            </div>
+
+            <div class="glass contact">
+                <h2>Contact Me</h2>
+
+                <p>For inquiries please reach me at:</p>
+
+                <a class="email"
+                   href="mailto:example@gmail.com">
+                    example@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="glass projects">
+
+            <h2>Current Projects</h2>
+
+            <div id="projectsContainer"></div>
+
+        </div>
+
+    </section>
+
+    <!-- BLOG -->
+    <section class="glass blog">
+
+        <h2>Blog</h2>
+
+        <div id="blogContainer"></div>
+
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="data/projects.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

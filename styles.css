@@ -1,0 +1,161 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#111827);
+    color:white;
+    font-family:Segoe UI,sans-serif;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.top-grid{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:20px;
+}
+
+.left-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:25px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.profile-image{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero p{
+    margin-top:15px;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.contact{
+    flex:1;
+}
+
+.contact p{
+    margin-top:15px;
+}
+
+.email{
+    display:inline-block;
+    margin-top:20px;
+    color:#2dd4bf;
+    font-size:1.2rem;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.projects{
+    height:600px;
+}
+
+.projects h2{
+    margin-bottom:20px;
+}
+
+#projectsContainer{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    overflow-y:auto;
+    max-height:520px;
+}
+
+.project-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    border:1px solid black;
+    border-radius:16px;
+    padding:15px;
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.05);
+    transition:0.2s;
+}
+
+.project-card:hover{
+    transform:translateY(-3px);
+}
+
+.project-card img{
+    width:90px;
+    height:90px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.blog{
+    margin-top:20px;
+}
+
+.blog-post{
+    padding:20px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.blog-post h3{
+    margin-bottom:10px;
+}
+
+.blog-post .date{
+    color:#94a3b8;
+}
+
+.pagination{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+button{
+    background:#2dd4bf;
+    border:none;
+    border-radius:10px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+
+    .top-grid{
+        grid-template-columns:1fr;
+    }
+
+    .projects{
+        height:auto;
+    }
+
+    #projectsContainer{
+        max-height:none;
+    }
+
+}
