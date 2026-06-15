@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portal</title>
-
+    
+    <!-- <script src="translations.js"></script> -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Markdown parser -->
@@ -13,6 +14,18 @@
 <body>
 
 <div class="container">
+
+    <div class="language-switcher">
+
+        <button onclick="setLanguage('en')">
+            EN
+        </button>
+
+        <button onclick="setLanguage('gr')">
+            GR
+        </button>
+
+    </div>
 
     <!-- TOP SECTION -->
     <section class="top-grid">
@@ -23,18 +36,15 @@
             <div class="glass hero">
                 <img src="images/profile-placeholder.jpg" class="profile-image">
 
-                <h1><strong>John Doe</strong></h1>
+                <h1 id="heroTitle"></h1>
 
-                <p>
-                    Software engineer, builder and lifelong learner.
-                    Passionate about creating projects and sharing ideas.
-                </p>
+                <p id="heroBio"></p>
             </div>
 
             <div class="glass contact">
-                <h2>Contact Me</h2>
+                <h2 id="contactTitle"></h2>
 
-                <p>For inquiries please reach me at:</p>
+                <p id="contactText"></p>
 
                 <a class="email"
                    href="mailto:example@gmail.com">
@@ -47,7 +57,7 @@
         <!-- PROJECTS -->
         <div class="glass projects">
 
-            <h2>Current Projects</h2>
+            <h2 id="projectsTitle"></h2>
 
             <div id="projectsContainer"></div>
 
@@ -58,7 +68,7 @@
     <!-- BLOG -->
     <section class="glass blog">
 
-        <h2>Blog</h2>
+        <h2 id="blogTitle"></h2>
 
         <div id="blogContainer"></div>
 
@@ -73,6 +83,7 @@
 </div>
 
 <script src="data/projects.js"></script>
+<script src="translations.js"></script>
 <script src="script.js"></script>
 
 </body>

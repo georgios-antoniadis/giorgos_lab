@@ -1,3 +1,31 @@
+
+//
+// LANGUAGE SUPPORT
+//
+
+function setLanguage(lang){
+
+    localStorage.setItem("language", lang);
+
+    document.getElementById("heroTitle").innerText =
+        translations[lang].heroTitle;
+
+    document.getElementById("heroBio").innerText =
+        translations[lang].heroBio;
+
+    document.getElementById("projectsTitle").innerText =
+        translations[lang].projectsTitle;
+
+    document.getElementById("contactTitle").innerText =
+        translations[lang].contactTitle;
+
+    document.getElementById("contactText").innerText =
+        translations[lang].contactText;
+
+    document.getElementById("blogTitle").innerText =
+        translations[lang].blogTitle;
+}
+
 //
 // PROJECTS
 //
@@ -22,13 +50,14 @@ projects.forEach(project => {
 
 });
 
+let currentPage = 1;
+const postsPerPage = 10;
+
 
 //
 // BLOG
 //
 
-let currentPage = 1;
-const postsPerPage = 10;
 
 async function loadBlog() {
 
@@ -87,3 +116,16 @@ async function renderPage(files){
 }
 
 loadBlog();
+
+//
+// INITIAL LANGUAGE
+//
+
+const browserLanguage = navigator.language.startsWith("el")
+    ? "gr"
+    : "en";
+
+const savedLanguage =
+    localStorage.getItem("language") || browserLanguage;
+
+setLanguage(savedLanguage);
