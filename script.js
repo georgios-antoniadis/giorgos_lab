@@ -89,10 +89,10 @@ async function renderPage(files){
         const date = dateMatch ? dateMatch[1] : "";
 
         container.innerHTML += `
-            <div class="blog-post">
+            <a class="blog-post" href="post.html?file=${encodeURIComponent(file)}">
                 <h3>${title}</h3>
                 <div class="date">${date}</div>
-            </div>
+            </a>
         `;
     }
 
