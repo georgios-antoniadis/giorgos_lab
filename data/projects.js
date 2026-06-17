@@ -1,32 +1,14 @@
 const projects = [
 
 {
-    title:"Example Project One",
-    image:"images/project-placeholder.jpg",
+    title:"TRG (RAG Test Case Generator)",
+    image:"images/TRG.png",
     url:"https://example.com"
 },
 
 {
-    title:"Example Project Two",
-    image:"images/project-placeholder.jpg",
-    url:"https://example.com"
-},
-
-{
-    title:"Example Project Three",
-    image:"images/project-placeholder.jpg",
-    url:"https://example.com"
-},
-
-{
-    title:"Example Project Four",
-    image:"images/project-placeholder.jpg",
-    url:"https://example.com"
-},
-
-{
-    title:"Example Project Five",
-    image:"images/project-placeholder.jpg",
+    title:"SPM (Simple Prompt Manager)",
+    image:"images/SPM.png",
     url:"https://example.com"
 }
 
