@@ -1,6 +1,6 @@
 ---
 title: Blog_003 - Prompt engineering
-Created: 2026-06-17
+date: 2026-06-17
 ---
 Slow morning, after a long night, started working on TRG at around 11am, at least the cardio for the day was taken care off. 
 
@@ -12,7 +12,7 @@ Experimenting with prompts is, again, very similar to thinking on how you instru
 
 I landed on restructuring my system prompt for a much leaner approach, I removed unnecessary context, fixed the example provided (garbage in - garbage out), and handled the conversation with the model like talking to someone with a short attention span. I had to repeat things a lot. As per [this tutorial](https://www.youtube.com/watch?v=ysPbXH0LpIE) reminding the model of the task in hand, along with the most important guidelines, can do wonders in reducing hallucinations when the conversation gets larger and larger.  
 
-Problem theory led me to categorize the specific task, that TRG is trying to solve, as a knowledge intensive task, which is something that (according to Liquid) the model I was using is not that great at. According to [this gentleman]() in edge models you overcome this shortcoming by doing clever algorithmic stuff, however that would greatly limit the capabilities of my application for what is ,perhaps, unnecessary speed for the type of problem that I am attempting to solve. 
+Problem theory led me to categorize the specific task, that TRG is trying to solve, as a knowledge intensive task, which is something that (according to Liquid) the model I was using is not that great at. According to [this gentleman](https://www.youtube.com/watch?v=fLUtUkqYHnQ&t) in edge models you overcome this shortcoming by doing clever algorithmic stuff, however that would greatly limit the capabilities of my application for what is ,perhaps, unnecessary speed for the type of problem that I am attempting to solve. 
 
 Liquid offers a flavor of LFM2.5 that has a quoted 8 billion parameters, and it takes up more disk space than Llama3.1, but they've design it so that only a fifth of the parameters fire up at a time. For my device means that when Llama took 2-3 minutes to respond, LFM responds in the range of 50 to 75 seconds. Mind you, I still need to do some lifting from my side. The results are satisfying. Faster than Llama and generalizes better than its little cousin (the 1.2B flavor). 
 

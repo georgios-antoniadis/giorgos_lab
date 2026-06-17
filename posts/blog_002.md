@@ -1,6 +1,6 @@
 ---
-title: Blog_001
-date: 2026-06-15
+title: Blog_002
+date: 2026-06-16
 ---
 
 Day 2 of the Blog. Last night ended after a long afternoon session of troubleshooting stuff when I finally got Liquid's LFM2 model to work, all of a sudden an idea flood, felt like everything clicked. The model was responding fast, suspiciously fast. The first time experiencing a small language model created to work on-device felt exactly like it should have. 

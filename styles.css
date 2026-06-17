@@ -201,3 +201,7 @@ button{
 .language-switcher button:hover{
     background:rgba(255,255,255,0.2);
 }
+
+#postContent p {
+    margin-bottom: 1rem;
+}
