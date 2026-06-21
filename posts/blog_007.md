@@ -1,6 +1,6 @@
 ---
-title:
-date: 
+title: Blog_007 - Quick thoughts on "The GenAI Divide" report
+date: 2026-06-21
 ---
 
 Been a big fun of Fireship for a long time now, even before the AI days, and 10 or so days ago he posted the installment of his code report series with the title "Anthropic is starting to panic". Near the end of the video he mentions a report published by one of MIT's open source media labs called "MIT NANDA". The report is called "The GenAI Divide - State of AI in Business 2025" and it is a pretty interesting read. In the "spy" version of this blog, I want to go over a very brief overview of the report, and I'll probably do a deeper dive in the following days as I read it again and again.
