@@ -1,0 +1,12 @@
+---
+title: Blog_008 - Memory part 1
+date: 2026-06-22
+---
+
+Context aware systems are proven to be the most useful. Even more practical applications have some sort of memory function that is updated incrementally. In this way the system is dynamic and more adaptive to the unique environment of any one scenario. Each organization has its own quirks and features, that should be represented in the product. In the context of traditional software this came in the form of custom-build applications for a very specific purpose and/or developing a system that has a few customization options built in. Notion and Excel are examples of software that was meant to fit most scenarios, with people using these tools in all sorts of ways. When it comes to AI, things are very different.
+
+It originates from the expectations. Users treat artificial intelligence differently, it's more human-to-human rather than human-to-software. What they expect in response is more human-like rather than software-like. Thus, customization needs to be a lot more specific this time around. The software should "know" and "remember" certain things for it to be at all useful. You've definitely seen the big players implementing it. It's something in the form of creating an isolated environment where specific knowledge is stored and used for prompts within this given environment. NotebookLM, ChatGPT memory, Claude's workspace and others. These are huge, powerful models, their system is complicated. Previous chats, uploaded documents, a list of resources etc. Data is multi-modal. 
+
+When it comes to locally hosted LLMs, resources are limited, you can only load so much in memory before things start lagging behind. The easiest way I've found to implement "memory" when hosting locally is through a bare bones text file. Simply save relevant information inside it and parse it through with each prompt. It's not fancy but it works. 
+
+There are only so many things you can write in a file. Some things may be hard to explain with plain sentences. We are people, we forget, wouldn't it be easier if someone took care of the writing for us? What if it was dynamic and it was improving the more we use the system? Then comes the task of having to update this file. Not all of the information from inside the text file might be useful for a particular prompt and/or you are running. What happens when the context window is not enough and how big can you make the context before it reaches the point of rotting? 
