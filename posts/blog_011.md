@@ -1,5 +1,5 @@
 ---
-title: Consistency and accountability
+title: Blog_011 - Consistency and accountability
 date: 2026-06-25
 ---
 
